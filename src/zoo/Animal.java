@@ -2,6 +2,12 @@ package zoo;
 
 public class Animal {
 	
+	//コンストラクタ
+	public Animal(String name) {
+		super();
+		this.name = name;
+	}
+
 	//フィールド
 	public String type;
 	public String name;
