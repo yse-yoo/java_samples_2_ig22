@@ -1,5 +1,7 @@
 package character;
 
+import monster.Monster;
+
 public class App {
 
 	//メインメソッド
@@ -11,6 +13,12 @@ public class App {
 		Warrior worrior = new Warrior("ボブ");
 		worrior.greet("どーも");
 		worrior.showStatus();
+		
+		Monster monster = new Monster();
+		worrior.attack(monster);
+		
+		System.out.println(monster.hp);
+		System.out.println(monster.isAlive());
 	}
 	
 
