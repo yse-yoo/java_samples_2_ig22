@@ -1,5 +1,7 @@
 package character;
 
+import monster.Monster;
+
 public class Character {
 
 	//フィールド
@@ -21,6 +23,12 @@ public class Character {
 	}
 
 	//インスタンスメソッド
+	public void attack(Monster monster) {
+		int damage = this.attackPower - monster.defencePower;
+		//ダメージが 0より大きかったら、MonsterのHPを減らす
+		if (damage > 0) monster.hp -= damage;
+	}
+
 	public void greet(String message) {
 		System.out.println(message);
 	}
