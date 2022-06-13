@@ -16,6 +16,8 @@ public class Character {
 	public Character(String name) {
 		super();
 		this.name = name;
+		this.level = 1;
+		this.exp = 0;
 	}
 
 	//インスタンスメソッド
