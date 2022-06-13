@@ -12,6 +12,12 @@ public class Character {
 	public int attackPower;
 	public int defencePower;
 
+	//コンストラクタ	
+	public Character(String name) {
+		super();
+		this.name = name;
+	}
+
 	//インスタンスメソッド
 	public void greet(String message) {
 		System.out.println(message);
