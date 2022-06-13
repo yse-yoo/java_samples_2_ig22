@@ -1,5 +1,6 @@
 package zoo;
 
+//スーパークラス
 public class Animal {
 	
 	//コンストラクタ
