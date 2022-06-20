@@ -33,7 +33,7 @@ public class Warrior extends Character {
 		//スーパークラスの attack()を実行
 		super.attack(monster);
 		
-		//攻撃力を元に戻す
+		//攻撃力を元（もと）に戻す
 		this.attackPower = attackPower;
 	}
 

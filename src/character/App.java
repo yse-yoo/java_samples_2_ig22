@@ -19,6 +19,16 @@ public class App {
 		
 		System.out.println(monster.hp);
 		System.out.println(monster.isAlive());
+		
+		//キャラクター３人
+		Wizard wizard1 = new Wizard("アリス");
+		Wizard wizard2 = new Wizard("テリー");
+		Warrior warrior1 = new Warrior("ボブ");
+
+		//キャラクターのArray
+		Character[] characters = { wizard1, wizard2, warrior1};
+		
+		
 	}
 	
 
