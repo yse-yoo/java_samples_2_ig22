@@ -38,7 +38,6 @@ public class App {
 			character.attack(monster1);
 			System.out.println(monster1.isAlive());
 		}
-
 		
 	}
 
