@@ -28,6 +28,17 @@ public class App2 {
 		Character selectCharacter = characterList.get(1);
 		System.out.println(selectCharacter.name);
 		
+		//最後のデータ削除
+		//最後のインデクスを取得
+		int lastIndex = dataCount - 1;
+		characterList.remove(lastIndex);
+
+		System.out.println("--- データ削除 ---");
+		for (Character character : characterList) {
+			System.out.println(character.name);
+		}
+		
+		
 	}
 
 }
