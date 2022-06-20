@@ -1,11 +1,13 @@
 package character;
 
+import java.util.Random;
+
 import monster.Monster;
 
 public class Warrior extends Character {
 
 	public Warrior(String name) {
-		//スーパークラスのコンストラクタを実行
+		// スーパークラスのコンストラクタを実行
 		super(name);
 		this.job = "warrior";
 		this.hp = 30;
@@ -14,9 +16,21 @@ public class Warrior extends Character {
 		this.defencePower = 8;
 	}
 
-	//上書き
+	// オーバーライド（上書き）
 	@Override
 	public void attack(Monster monster) {
+		System.out.println("オーバーライド");
+
+		// 攻撃力をキャッシュ
+		int attackPower = this.attackPower;
+
+		// 1/5の確率（かくりつ）で、攻撃力を2倍
+		Random rand = new Random();
+		if (rand.nextInt(5) == 0) {
+			this.attackPower *= 2;
+		}
+		
 		
 	}
+
 }
