@@ -28,6 +28,11 @@ public class App {
 		// AnimalのArray
 		Animal[] animals = { cat1, cat2, dog1, dog2 };
 		
+		//for文で繰り返し
+		for (Animal animal : animals) {
+			animal.cry();
+			animal.walk();
+		}
 	}
 
 }
