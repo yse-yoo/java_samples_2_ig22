@@ -16,6 +16,18 @@ public class App {
 		dog.cry();
 		//Dogだけの機能
 		dog.collectiveAction();
+		
+		
+		// Cat & Dog
+		Cat cat1 = new Cat("ミケ");
+		Cat cat2 = new Cat("シェリー");
+		Dog dog1 = new Dog("タロー");
+		Dog dog2 = new Dog("マイケル");
+		
+		
+		// AnimalのArray
+		Animal[] animals = { cat1, cat2, dog1, dog2 };
+		
 	}
 
 }
