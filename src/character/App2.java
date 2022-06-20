@@ -19,6 +19,15 @@ public class App2 {
 		for (Character character : characterList) {
 			System.out.println(character.name);
 		}
+
+		//データの個数: size()
+		int dataCount = characterList.size();
+		System.out.println(dataCount);
+		
+		//データの取得: get(index)
+		Character selectCharacter = characterList.get(1);
+		System.out.println(selectCharacter.name);
+		
 	}
 
 }
