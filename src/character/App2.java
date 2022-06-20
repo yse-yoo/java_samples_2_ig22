@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class App2 {
 
 	public static void main(String[] args) {
+
 		//配列 Array(imutable)
 		//Character[] characters;
 		
@@ -38,6 +39,10 @@ public class App2 {
 			System.out.println(character.name);
 		}
 		
+		//すべて削除
+		characterList.clear();
+		dataCount = characterList.size();
+		System.out.println(dataCount);	
 		
 	}
 
