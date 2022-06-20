@@ -1,5 +1,7 @@
 package character;
 
+import monster.Monster;
+
 public class Warrior extends Character {
 
 	public Warrior(String name) {
@@ -12,4 +14,9 @@ public class Warrior extends Character {
 		this.defencePower = 8;
 	}
 
+	//上書き
+	@Override
+	public void attack(Monster monster) {
+		
+	}
 }
