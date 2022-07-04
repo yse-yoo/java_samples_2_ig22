@@ -22,6 +22,7 @@ public class App2 {
 		characterList.add(new Wizard("テリー"));
 		characterList.add(new Warrior("ボブ"));
 
+		//繰り返し => read
 		for (Character character : characterList) {
 			System.out.println(character.name);
 		}
@@ -52,7 +53,6 @@ public class App2 {
 			System.out.println(character.name);
 		}
 
-		
 		//すべて削除
 		System.out.println("--- データ全削除 ---");
 		characterList.clear();
