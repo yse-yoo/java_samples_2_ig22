@@ -1,6 +1,4 @@
-package shop;
-
-import shop.entity.UserBean;
+package shop.entity;
 
 public class App {
 
