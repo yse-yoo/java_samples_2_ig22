@@ -10,10 +10,18 @@ public class App {
 
 		//setter
 		user.setEmail("test@example.com");
+		user.setName("東京　太郎");
+		user.setPassword("pass1234");
 
 		//getter
 		String email = user.getEmail();
 		System.out.println(email);
+
+		String name = user.getName();
+		System.out.println(name);
+
+		String pasword = user.getPassword();
+		System.out.println(pasword);
 	}
 
 }

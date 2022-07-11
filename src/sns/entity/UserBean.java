@@ -6,7 +6,7 @@ public class UserBean {
 	private String name;
 	private String password;
 	
-	//getter / setter (自動で作成）
+	// getter/setter
 	public String getEmail() {
 		return email;
 	}
@@ -25,6 +25,7 @@ public class UserBean {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 
 	
 }
