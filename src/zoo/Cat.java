@@ -5,13 +5,14 @@ public class Cat extends Animal {
 
 	public Cat(String name) {
 		super(name);
-		this.type = "cat";
-		this.crying = "にゃー";
+		setType("cat");
+		setCrying("にゃー");
+
 	}
 
 	@Override
 	public void walk() {
-		String message = this.name + "警戒して歩いています。";
+		String message = getName() + "警戒して歩いています。";
 		System.out.println(message);
 	}
 	
