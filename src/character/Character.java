@@ -2,7 +2,7 @@ package character;
 
 import monster.Monster;
 
-public class Character {
+public class Character extends CharacterAbstract{
 
 	//フィールド
 	public String name;
@@ -44,6 +44,18 @@ public class Character {
 		System.out.println("Attack: " + this.attackPower);
 		System.out.println("Defence: " + this.defencePower);
 		System.out.println("--------");
+	}
+
+	@Override
+	public boolean isAlive() {
+		// TODO 自動生成されたメソッド・スタブ
+		return false;
+	}
+
+	@Override
+	public void magic(Monster monster, String key) {
+		// TODO 自動生成されたメソッド・スタブ
+		
 	}
 	
 }
