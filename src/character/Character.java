@@ -1,5 +1,6 @@
 package character;
 
+import item.Item;
 import monster.Monster;
 
 public class Character implements CharacterInterface {
@@ -55,6 +56,12 @@ public class Character implements CharacterInterface {
 	public void magic(Monster monster, String key) {
 		// TODO 自動生成されたメソッド・スタブ
 		
+	}
+
+	@Override
+	public void equip(Item item) {
+		String message = this.name + "が" + item.getName() + "を装備した";
+		System.out.println(message);
 	}
 
 	
