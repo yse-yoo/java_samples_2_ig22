@@ -1,7 +1,7 @@
 package zoo;
 
 //スーパークラス
-public class Animal {
+public class Animal extends AnimalAbstract {
 	
 	//コンストラクタ
 	public Animal(String name) {
@@ -29,4 +29,10 @@ public class Animal {
 		String message = this.name + "が逃げた";
 		System.out.println(message);
 	}
+
+	@Override
+	public void eat(String something) {
+		System.out.println(something + "を食べている");
+	}
+	
 }

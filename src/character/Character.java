@@ -48,13 +48,11 @@ public class Character extends CharacterAbstract{
 
 	@Override
 	public boolean isAlive() {
-		// TODO 自動生成されたメソッド・スタブ
-		return false;
+		return (this.hp > 0);
 	}
 
 	@Override
 	public void magic(Monster monster, String key) {
-		// TODO 自動生成されたメソッド・スタブ
 		
 	}
 	

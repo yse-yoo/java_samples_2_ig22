@@ -32,6 +32,7 @@ public class App {
 		for (Animal animal : animals) {
 			animal.cry();
 			animal.walk();
+			animal.eat("リンゴ");
 		}
 	}
 
