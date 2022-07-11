@@ -10,15 +10,39 @@ public class Animal extends AnimalAbstract {
 	}
 
 	//フィールド
-	public String type;
-	public String name;
-	public String crying;
-	
+	private String type;
+	private String name;
+	private String crying;
 	
 	//インスタンスメソッド
 	public void walk() {
 		String message = this.name + "が歩いた";
 		System.out.println(message);
+	}
+
+	//setter/getter
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCrying() {
+		return crying;
+	}
+
+	public void setCrying(String crying) {
+		this.crying = crying;
 	}
 
 	public void cry() {
