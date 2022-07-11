@@ -1,12 +1,19 @@
 package sns.entity;
 
-public class UserBean {
+import java.io.Serializable;
+
+public class UserBean implements Serializable {
 
 	private String email;
 	private String name;
 	private String password;
 	
-	// getter/setter
+	//コンストラクタ（引数なし）
+	public UserBean() {
+		super();
+	}
+	
+	//getter / setter (自動で作成）
 	public String getEmail() {
 		return email;
 	}
@@ -25,7 +32,6 @@ public class UserBean {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
 
 	
 }
