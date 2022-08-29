@@ -35,6 +35,10 @@ public class App {
 					System.out.println(line);
 				}
 				
+				//ファイルを閉じる
+				reader.close();
+				buffer.close();
+				
 			} catch (FileNotFoundException e) {
 				System.out.println("ファイルが読み込めませんでした");
 			} catch (IOException e) {
