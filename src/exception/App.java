@@ -17,16 +17,17 @@ public class App {
 			System.out.println("countがまちがっています。");
 		}
 		
-		loadFile("");
+		loadFile("sample.txt");
 	}
 	
 	public static void loadFile(String path) {
 		
-		try {
-			FileReader reader = new FileReader(path);
-		} catch (FileNotFoundException e) {
-			System.out.println("ファイルが読み込めませんでした");
-		}
+			try {
+				FileReader reader = new FileReader(path);
+				System.out.println(path + "を読み込みました");
+			} catch (FileNotFoundException e) {
+				System.out.println("ファイルが読み込めませんでした");
+			}
 		
 	}
 	
