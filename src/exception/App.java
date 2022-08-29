@@ -38,8 +38,7 @@ public class App {
 			} catch (FileNotFoundException e) {
 				System.out.println("ファイルが読み込めませんでした");
 			} catch (IOException e) {
-				// TODO 自動生成された catch ブロック
-				e.printStackTrace();
+				System.out.println("中身が読み込めませんでした");
 			}
 		
 	}
