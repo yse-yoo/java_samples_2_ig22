@@ -1,4 +1,4 @@
-package excption;
+package exception;
 
 public class App {
 
