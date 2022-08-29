@@ -18,6 +18,17 @@ public class App {
 		} else {
 			System.out.println("countがまちがっています。");
 		}
+		
+		count = -1;
+		if (count < 0) {
+			try {
+				throw new IllegalArgumentException();
+			} catch (Exception e) {
+				System.out.println("countがマイナスです");
+			}
+		}
+		
+		
 
 		loadFile("sample.txt");
 		
