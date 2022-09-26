@@ -36,6 +36,7 @@ public class AppMap {
 		}
 		
 		//演習
+		System.out.println("---Q1---");
 		//問題1
 		Map<Integer, String> foodMap = new HashMap<>();
 		foodMap.put(1, "Apple");
@@ -43,23 +44,30 @@ public class AppMap {
 		foodMap.put(3, "Grape");
 		
 		//問題2
+		System.out.println("---Q2---");
 		String foodName = foodMap.get(2);
 		System.out.println(foodName);
 		
 		//問題3
+		System.out.println("---Q3---");
 		for (String name : foodMap.values()) {
 			System.out.println(name);
 		}
 
 		//問題4
+		System.out.println("---Q4---");
 		Map<String, String> cityMap = new HashMap<>();
 		cityMap.put("tokyo", "東京");
 		cityMap.put("osaka", "大阪");
 		cityMap.put("yokohama", "横浜");
 
 		//問題5
-
+		System.out.println("---Q5---");
+		for (String cityKey : cityMap.keySet()) {
+			System.out.println(cityKey);
+		}
 		
+
 	}
 
 }
