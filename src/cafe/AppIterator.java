@@ -1,6 +1,7 @@
 package cafe;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.ListIterator;
@@ -52,7 +53,24 @@ public class AppIterator {
 			System.out.println(drink.name);
 		}
 		
+		System.out.println("--- Calendar ---");
+		int sundayIndex = Calendar.SUNDAY;
+		System.out.println(sundayIndex);
 		
+		//曜日のMap
+		Map<Integer, String> weekdays = new HashMap<>();
+		weekdays.put(Calendar.SUNDAY, "日");
+		weekdays.put(Calendar.MONDAY, "月");
+		weekdays.put(Calendar.TUESDAY, "火");
+		weekdays.put(Calendar.WEDNESDAY, "水");
+		weekdays.put(Calendar.THURSDAY, "木");
+		weekdays.put(Calendar.FRIDAY, "金");
+		weekdays.put(Calendar.SATURDAY, "土");
+		
+		
+		
+
+
 	}
 
 }
