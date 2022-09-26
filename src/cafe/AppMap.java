@@ -9,7 +9,10 @@ public class AppMap {
 //		ArrayList<Drink> drinkList = new ArrayList<>();
 
 		Map<Integer, Drink> drinkMap = new HashMap<>();
-
+		drinkMap.put(1, new Drink("コーヒー", 350));
+		drinkMap.put(2, new Drink("紅茶", 400));
+		drinkMap.put(3, new Drink("ほうじ茶", 300));
+		
 	}
 
 }
