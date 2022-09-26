@@ -16,6 +16,10 @@ public class AppMap {
 		for (Integer key : drinkMap.keySet()) {
 			System.out.println(key);
 		}
+		
+		for (Drink drink : drinkMap.values()) {
+			System.out.println(drink.name);
+		}
 	}
 
 }
