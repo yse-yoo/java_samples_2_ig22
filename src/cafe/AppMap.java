@@ -20,6 +20,12 @@ public class AppMap {
 		for (Drink drink : drinkMap.values()) {
 			System.out.println(drink.name);
 		}
+		
+		Drink selectDrink = drinkMap.get(1);
+		System.out.println(selectDrink.name);
+		System.out.println(selectDrink.price);
+
+
 	}
 
 }
