@@ -25,7 +25,17 @@ public class AppMap {
 		System.out.println(selectDrink.name);
 		System.out.println(selectDrink.price);
 
+		// Mapのデータ個数
+		int count = drinkMap.size();
+		System.out.println(count);
 
+		System.out.println("--- remove ---");
+		drinkMap.remove(1);
+		for (Drink drink : drinkMap.values()) {
+			System.out.println(drink.name);
+		}
+		
+		
 	}
 
 }
