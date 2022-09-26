@@ -12,7 +12,10 @@ public class AppMap {
 		drinkMap.put(1, new Drink("コーヒー", 350));
 		drinkMap.put(2, new Drink("紅茶", 400));
 		drinkMap.put(3, new Drink("ほうじ茶", 300));
-		
+	
+		for (Integer key : drinkMap.keySet()) {
+			System.out.println(key);
+		}
 	}
 
 }
