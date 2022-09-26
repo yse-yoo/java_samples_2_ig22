@@ -19,6 +19,12 @@ public class App {
 			System.out.println("countがまちがっています。");
 		}
 		
+		try {
+			
+		} finally {
+
+		}
+		
 		count = -1;
 		if (count < 0) {
 			try {
@@ -27,12 +33,8 @@ public class App {
 				System.out.println("countがマイナスです");
 			}
 		}
-		
-		
 
 		loadFile("sample.txt");
-		
-
 		try {
 			loadFile2("sample.txt");
 			System.out.println("ファイルを読み込みました");
@@ -45,7 +47,6 @@ public class App {
 	public static void loadFile2(String path) throws FileNotFoundException {
 		FileReader reader = new FileReader(path);
 	}
-
 
 	public static void loadFile(String path) {
 

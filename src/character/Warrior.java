@@ -17,6 +17,7 @@ public class Warrior extends Character {
 	}
 
 	// オーバーライド（上書き）
+	//	@ をつけて書く = アノテーション
 	@Override
 	public void attack(Monster monster) {
 		System.out.println("オーバーライド");

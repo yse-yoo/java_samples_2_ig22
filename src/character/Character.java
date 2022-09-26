@@ -3,7 +3,7 @@ package character;
 import item.Item;
 import monster.Monster;
 
-public class Character implements CharacterInterface {
+public class Character implements CharacterInterface, MovableInterface {
 
 	//フィールド
 	public String name;
@@ -62,6 +62,12 @@ public class Character implements CharacterInterface {
 	public void equip(Item item) {
 		String message = this.name + "が" + item.getName() + "を装備した";
 		System.out.println(message);
+	}
+
+	@Override
+	public void walk() {
+		// TODO 自動生成されたメソッド・スタブ
+		
 	}
 
 	
