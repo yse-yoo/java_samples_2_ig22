@@ -66,7 +66,6 @@ public class AppMap {
 		for (String cityKey : cityMap.keySet()) {
 			System.out.println(cityKey);
 		}
-		
 
 	}
 
