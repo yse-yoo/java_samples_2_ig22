@@ -58,6 +58,7 @@ public class AppIterator {
 		System.out.println(sundayIndex);
 		
 		//曜日のMap
+		System.out.println("--- Calendar Iterator ---");
 		Map<Integer, String> weekdays = new HashMap<>();
 		weekdays.put(Calendar.SUNDAY, "日");
 		weekdays.put(Calendar.MONDAY, "月");
@@ -67,9 +68,11 @@ public class AppIterator {
 		weekdays.put(Calendar.FRIDAY, "金");
 		weekdays.put(Calendar.SATURDAY, "土");
 		
-		
-		
-
+		Iterator<Integer> weekKeyIterator = weekdays.keySet().iterator();
+		while (weekKeyIterator.hasNext()) {
+			Integer key = weekKeyIterator.next();
+			System.out.println(key);
+		}
 
 	}
 
