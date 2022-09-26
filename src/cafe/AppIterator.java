@@ -3,6 +3,7 @@ package cafe;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.ListIterator;
 import java.util.Map;
 
 public class AppIterator {
@@ -34,7 +35,24 @@ public class AppIterator {
 			System.out.println(key);
 		}
 
+		Iterator<Drink> valueIterator = drinkMap.values().iterator();
+		while (valueIterator.hasNext()) {
+			Drink drink = valueIterator.next();
+			System.out.println(drink.name);
+			System.out.println(drink.price);
+		}
 
+		//ListIterator
+		System.out.println("--- List Iterator ---");
+		ListIterator<Drink> listIterator = drinkList.listIterator();
+		listIterator.add(new Drink("カフェモカ", 350));
+		listIterator.previous();
+		while (listIterator.hasNext()) {
+			Drink drink = listIterator.next();
+			System.out.println(drink.name);
+		}
+		
+		
 	}
 
 }
