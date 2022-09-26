@@ -42,7 +42,23 @@ public class AppMap {
 		foodMap.put(2, "Peach");
 		foodMap.put(3, "Grape");
 		
+		//問題2
+		String foodName = foodMap.get(2);
+		System.out.println(foodName);
 		
+		//問題3
+		for (String name : foodMap.values()) {
+			System.out.println(name);
+		}
+
+		//問題4
+		Map<String, String> cityMap = new HashMap<>();
+		cityMap.put("tokyo", "東京");
+		cityMap.put("osaka", "大阪");
+		cityMap.put("yokohama", "横浜");
+
+		//問題5
+
 		
 	}
 
