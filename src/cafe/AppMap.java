@@ -35,6 +35,14 @@ public class AppMap {
 			System.out.println(drink.name);
 		}
 		
+		//演習
+		//問題1
+		Map<Integer, String> foodMap = new HashMap<>();
+		foodMap.put(1, "Apple");
+		foodMap.put(2, "Peach");
+		foodMap.put(3, "Grape");
+		
+		
 		
 	}
 
