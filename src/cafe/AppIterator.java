@@ -93,7 +93,6 @@ public class AppIterator {
 		while (scoreIterator.hasNext()) {
 			Integer score = scoreIterator.next();
 			System.out.println(score);
-			//TODO: 合計値の計算
 			sum += score;
 		}
 		System.out.println(sum);
@@ -101,6 +100,23 @@ public class AppIterator {
 		float average = sum / scores.size();
 		System.out.println(average);
 
+		sum = 0;
+		for (Integer score : scores) {
+			sum += score;
+		}
+		System.out.println(sum);
+
+		// Q2
+		Map<String, String> cityMap = new HashMap<>();
+		cityMap.put("tokyo", "東京");
+		cityMap.put("osaka", "大阪");
+		cityMap.put("yokohama", "横浜");
+		
+		Iterator<String> cityValueIterator = cityMap.values().iterator();
+		while (cityValueIterator.hasNext()) {
+			String cityName = cityValueIterator.next();
+			System.out.println(cityName);
+		}
 	}
 
 }
