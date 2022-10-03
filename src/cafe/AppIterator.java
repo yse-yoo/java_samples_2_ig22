@@ -74,6 +74,20 @@ public class AppIterator {
 			System.out.println(key);
 		}
 
+		Iterator<String> weekValueIterator = weekdays.values().iterator();
+		while (weekValueIterator.hasNext()) {
+			String weekday = weekValueIterator.next();
+			System.out.println(weekday);
+		}
+		
+		//Question 1
+		ArrayList<Integer> scores = new ArrayList<>();
+		scores.add(76);
+		scores.add(81);
+		scores.add(92);
+		scores.add(56);
+		scores.add(73);
+		
 	}
 
 }
