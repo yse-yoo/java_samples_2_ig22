@@ -10,6 +10,11 @@ public class App3 {
 		System.out.println(drink1.size);
 		System.out.println(drink2.size);
 		System.out.println(drink3.size);
+		
+
+		System.out.println(drink1.size.getValue());
+		System.out.println(drink2.size.getValue());
+		System.out.println(drink3.size.getValue());
 	}
 
 }
