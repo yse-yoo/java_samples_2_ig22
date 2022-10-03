@@ -88,6 +88,15 @@ public class AppIterator {
 		scores.add(56);
 		scores.add(73);
 		
+		int sum = 0;
+		Iterator<Integer> scoreIterator = scores.iterator();
+		while (scoreIterator.hasNext()) {
+			Integer score = scoreIterator.next();
+			System.out.println(score);
+			//TODO: 合計値の計算
+			
+		}
+		System.out.println(sum);
 	}
 
 }
