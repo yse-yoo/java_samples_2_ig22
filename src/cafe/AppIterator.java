@@ -117,6 +117,10 @@ public class AppIterator {
 			String cityName = cityValueIterator.next();
 			System.out.println(cityName);
 		}
+		
+		for (String cityName : cityMap.values()) {
+			System.out.println(cityName);
+		}
 	}
 
 }
