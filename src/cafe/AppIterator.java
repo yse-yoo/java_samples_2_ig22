@@ -121,6 +121,16 @@ public class AppIterator {
 		for (String cityName : cityMap.values()) {
 			System.out.println(cityName);
 		}
+		
+		
+		//q3
+		Map<Integer, Score> scoreMap = new HashMap<>();
+		scoreMap.put(1, new Score("A", 67));
+		scoreMap.put(1, new Score("B", 91));
+		scoreMap.put(1, new Score("C", 55));
+		scoreMap.put(1, new Score("D", 83));
+		scoreMap.put(1, new Score("E", 74));
+		
 	}
 
 }
