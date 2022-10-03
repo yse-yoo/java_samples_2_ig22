@@ -94,9 +94,13 @@ public class AppIterator {
 			Integer score = scoreIterator.next();
 			System.out.println(score);
 			//TODO: 合計値の計算
-			
+			sum += score;
 		}
 		System.out.println(sum);
+		
+		float average = sum / scores.size();
+		System.out.println(average);
+
 	}
 
 }
