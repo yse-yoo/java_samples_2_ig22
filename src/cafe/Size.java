@@ -1,7 +1,7 @@
 package cafe;
 
 public enum Size {
-	LARGE("大"), MEDIUM("中"), SMALL("小");
+	LARGE("L"), MEDIUM("M"), SMALL("S");
 	
 	private final String value;
 	
