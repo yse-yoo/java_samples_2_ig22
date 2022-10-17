@@ -8,4 +8,10 @@ public class Item {
         this.name = name;
     }
     
+    public void order() {
+        System.out.println(name);
+        
+        System.out.println("--- Ordered ---");
+    }
+
 }
