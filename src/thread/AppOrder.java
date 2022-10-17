@@ -13,6 +13,12 @@ public class AppOrder {
         for (Item item : drinkList) {
             ShopThread thread = new ShopThread(item);
             thread.start();
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 
