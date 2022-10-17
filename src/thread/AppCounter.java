@@ -7,6 +7,9 @@ public class AppCounter {
         
         Thread thread1 = new Thread(counter);
         thread1.start();
+
+        Thread thread2 = new Thread(counter);
+        thread2.start();
         
     }
 
