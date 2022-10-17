@@ -1,6 +1,6 @@
 package thread;
 
-public class ShopThread {
+public class ShopThread extends Thread {
 
     private Item item;
 
@@ -9,5 +9,9 @@ public class ShopThread {
         this.item = item;
     }
     
-    
+    @Override
+    public void run() {
+        item.order();
+    }
+
 }
