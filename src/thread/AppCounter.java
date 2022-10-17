@@ -6,9 +6,11 @@ public class AppCounter {
         CounterThread counter = new CounterThread();
         
         Thread thread1 = new Thread(counter);
+        thread1.setName("スレッド1");
         thread1.start();
 
         Thread thread2 = new Thread(counter);
+        thread2.setName("スレッド2");
         thread2.start();
         
     }
