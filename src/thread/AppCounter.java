@@ -12,7 +12,6 @@ public class AppCounter {
         Thread thread2 = new Thread(counter);
         thread2.setName("スレッド2");
         thread2.start();
-        
     }
 
 }
