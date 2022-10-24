@@ -7,9 +7,11 @@ public class App1 {
         Runnable runner = new Runnable() {
             @Override
             public void run() {
-                System.out.println("Hello!!!");
+               System.out.println("Hello!"); 
             }
         };
+        
+        runner.run();
     }
 
 }
