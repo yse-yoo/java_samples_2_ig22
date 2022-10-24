@@ -13,6 +13,10 @@ public class AppDrink {
         drinkList.add(new Drink("紅茶", 400));
         drinkList.add(new Drink("ほうじ茶", 300));
 
+        drinkList.forEach((drink) -> {
+            System.out.println(drink.name);
+            System.out.println(drink.price);
+        });
     }
 
 }
