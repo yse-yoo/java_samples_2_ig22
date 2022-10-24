@@ -13,7 +13,7 @@ public class AppRun {
        System.out.println(message); 
     }
     
-    public static void hello(Runnable r) {
-        r.run();
+    public static void hello(Runnable runner) {
+        runner.run();
     }
 }
