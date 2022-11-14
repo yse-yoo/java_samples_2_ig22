@@ -21,7 +21,7 @@ public class AppMap {
 			System.out.println(drink.name);
 		}
 		
-		Drink selectDrink = drinkMap.get(1);
+		Drink selectDrink = drinkMap.get(3);
 		System.out.println(selectDrink.name);
 		System.out.println(selectDrink.price);
 
