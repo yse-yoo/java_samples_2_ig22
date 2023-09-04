@@ -1,9 +1,14 @@
 package exception;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import javax.imageio.stream.FileImageInputStream;
 
 public class App {
 
@@ -51,7 +56,9 @@ public class App {
 	public static void loadFile(String path) {
 
 		try {
-			FileReader reader = new FileReader(path);
+			FileInputStream file = new FileInputStream(path);
+			InputStreamReader reader = new InputStreamReader(file, "UTF-8");
+			// FileReader reader = new FileReader(path);
 			System.out.println(path + "を読み込みました");
 
 			// ファイルの中身を読み込む
