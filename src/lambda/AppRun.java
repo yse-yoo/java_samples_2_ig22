@@ -20,7 +20,13 @@ public class AppRun {
     }
     
     public static void hello(Runnable runner) {
+        System.out.println("処理1");
+        System.out.println("処理2");
+
         runner.run();
+
+        System.out.println("処理3");
+        System.out.println("処理4");
     }
 
 }
